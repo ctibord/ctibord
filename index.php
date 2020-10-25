@@ -9,6 +9,6 @@ class CtiborD {
       return $num1 * $num2;
     else if ($deleni && !$soucet && !$odcitani && !$nasobeni)
       return intdiv($num1, $num2);
-    else die("chyba");
+    else throw Error("Invalid configuration");
   }
 }
