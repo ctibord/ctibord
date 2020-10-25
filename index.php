@@ -7,8 +7,11 @@ class CtiborD {
       return $num1 - $num2;
     else if ($nasobeni && !$soucet && !$odcitani && !$deleni)
       return $num1 * $num2;
-    else if ($deleni && !$soucet && !$odcitani && !$nasobeni)
+    else if ($deleni && !$soucet && !$odcitani && !$nasobeni) {
+      if ($num2 == 0)
+        throw Error("Cannot divide by 2");
       return intdiv($num1, $num2);
+    }
     else throw Error("Invalid configuration");
   }
 }
