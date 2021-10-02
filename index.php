@@ -18,4 +18,10 @@ class CtiborD {
     }
     else throw new Error("Invalid configuration");
   }
+  public function factorial(int $num) {
+    $res = 1;
+    for ($i = 2; $i <= $num; $i++)
+      $res *= $i;
+    return $res;
+  }
 }
