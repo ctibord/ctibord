@@ -16,3 +16,4 @@ try {
 } catch (Error $e) {
     echo("Chyba modulo zachycena! ".$e->getMessage());
 }
+echo("Faktorial 4: ".$ct->factorial(4));
